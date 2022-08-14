@@ -1,4 +1,4 @@
-const createDiv = () => document.createElement('div');
+import { createDiv } from "./utils";
 
 const HeaderComponent = function(){
     const header = document.createElement('header');
@@ -6,7 +6,7 @@ const HeaderComponent = function(){
     const logo = createDiv();
     const nav = document.createElement('nav');
 
-    const companyTitle = document.createElement('h1');
+    const companyTitle = document.createElement('h2');
     companyTitle.textContent = 'Chooks To Sauce';
     logo.appendChild(companyTitle);
 
