@@ -1,0 +1,145 @@
+
+:root {
+    --white: #f5f7dc;
+    --black: #28262c;
+    --primary-color: #058ED9;
+    --secondary-color: #FF8811;
+    --accent-color: #D33F49;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 61.5%;
+}
+
+body {
+    color: var(--black);
+    font-family: 'Excon', sans-serif;
+    font-size: 2.4rem;
+}
+
+header {
+    padding: 1em 10vw;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 1em;
+}
+
+#home:hover, #menu:hover, #contact:hover{
+    color: var(--white);
+    padding: 1rem;
+    background: var(--primary-color);
+    border-radius: 2rem;
+}
+/* ========== Content ========== */
+
+.container {
+    padding: 1em 10vw;
+}
+
+/* =========== Home ========== */
+.hero {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+#resto {
+    width: calc(250px + 20vw);
+}
+
+/* ============ Menu =========== */
+.menu {
+    padding: 2rem 0;
+    display: grid;
+    gap: 16px;
+    grid-template-areas: 
+    "chicken fries drinks"
+    "chicken sinigang sinigang"
+    "side1 side2 side3";
+}
+.menu-item {
+    color: var(--white);
+    display: flex;
+    gap: 16px;
+    min-height: 200px;
+    padding: 1.5rem;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+
+.chicken {
+    height: 2fr;
+    grid-area: chicken;
+}
+
+.fries {
+    grid-area: fries;
+}
+
+.drinks {
+    grid-area: drinks;
+
+}
+.sinigang {
+    grid-area: sinigang;
+}
+
+/* ======= Contact ======== */
+.contacts {
+    display: flex;
+    padding: 2rem;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+.right {
+    max-height: 50rem;
+    color: var(--white);
+    background: var(--primary-color);
+    padding: 5rem;
+    border-radius: 2rem;
+}
+input {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+input[type='text']{
+    height: 15vh;
+}
+
+button {
+    margin: 2rem auto;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
+    padding: 1.5rem 2rem;
+}
+#contact-image {
+    height: calc(20vw + 300px);
+}
