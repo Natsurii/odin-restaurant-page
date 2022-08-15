@@ -19,6 +19,9 @@ const HeaderComponent = function(){
     menu.textContent = 'MENU';
     contact.textContent = 'CONTACT';
 
+    home.id = 'home';
+    menu.id = 'id';
+    contact.id = 'id';
     nav.appendChild(home);
     nav.appendChild(menu);
     nav.appendChild(contact);
