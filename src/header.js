@@ -20,8 +20,8 @@ const HeaderComponent = function(){
     contact.textContent = 'CONTACT';
 
     home.id = 'home';
-    menu.id = 'id';
-    contact.id = 'id';
+    menu.id = 'menu';
+    contact.id = 'contact';
     nav.appendChild(home);
     nav.appendChild(menu);
     nav.appendChild(contact);
